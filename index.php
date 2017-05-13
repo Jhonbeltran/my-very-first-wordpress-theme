@@ -6,22 +6,47 @@
 	<link rel="stylesheet" href="<?php bloginfo(stylesheet_url); ?>">
 </head>
 <body>
-	<center>
-		<h3>
-			<?php bloginfo(description); ?>
-		</h3>
-	</center>
-	<center>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ea sed architecto vitae ab aliquid dolores autem, accusantium labore repudiandae natus. Ratione sapiente molestias, itaque accusamus tempora, voluptatem! Quasi, quaerat.</p>
-	</center>
-	
-	<center>
-		<ul>
-			<li>Url: <?php bloginfo(url); ?></li>
-			<li>Idioma <?php bloginfo(language); ?></li>
-			<li>Archivo de css: <?php bloginfo(stylesheet_url); ?></li>
-			<li>Directorio de archivos css: <?php bloginfo(stylesheet_directory); ?></li>
-		</ul>
-	</center>
+	<div class="navbar-fixed">
+	  <nav class="white z-depth-3">
+	    <div class="nav-wrapper">
+	      <a href="#!" class="brand-logo center black-text flow-text"><?php bloginfo(name) ?></a>
+	    </div>
+	  </nav>
+	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l3 hide-on-med-and-down">
+        <ul>
+          <li class="flow-text">Lista 1</li>
+          <li class="flow-text">Lista</li>
+          <li class="flow-text">Lista</li>
+          <li class="flow-text">Lista</li>
+          <li class="flow-text">Lista</li>
+        </ul>
+      </div>
+      <div class="col s12 l9">
+        <div class="row"></div>
+        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
+        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
+        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><?php bloginfo(name) ?></h5>
+          <p class="grey-text text-lighten-4"><?php bloginfo(description) ?></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Feel free to edit an share!
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Jhonbeltran">@Jhonbeltran</a>
+      </div>
+    </div>
+  </footer>       
 </body>
 </html>
