@@ -1,9 +1,9 @@
 	  <div class="col s12 l3 hide-on-med-and-down">
         <ul>
-          <li class="flow-text">Lista 1</li>
-          <li class="flow-text">Lista</li>
-          <li class="flow-text">Lista</li>
-          <li class="flow-text">Lista</li>
-          <li class="flow-text">Lista</li>
+          <li><a class="btn-flat waves-effect" href="#!">Lorem ipsum</a></li>
+          <li><a class="btn-flat waves-effect" href="#!">Lorem ipsum</a></li>
+          <li><a class="btn-flat waves-effect" href="#!">Lorem ipsum</a></li>
+          <li><a class="btn-flat waves-effect" href="#!">Lorem ipsum</a></li>
+          <li><a class="btn-flat waves-effect" href="#!">Lorem ipsum</a></li>
         </ul>
       </div>

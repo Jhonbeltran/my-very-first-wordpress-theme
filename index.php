@@ -4,9 +4,20 @@
       <?php get_sidebar(); ?>
       <div class="col s12 l9">
         <div class="row"></div>
-        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
-        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
-        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt qui expedita aliquid voluptates. Delectus odit reiciendis possimus distinctio maiores molestiae obcaecati, perspiciatis. Temporibus, vel. Minima doloribus modi voluptas vero nulla?</p>
+        <div class="row">
+          <h3>Mis Proyectos más recientes</h3>
+          <div class="divider"></div>
+
+          <?php if (have_posts()){
+            while (have_posts()) {
+              the_post(); ?>
+              <h4><?php the_title(); ?></h4>
+              <p><?php the_excerpt(); ?></p>
+              <?php
+            }
+          }?>
+
+        </div>
       </div>
     </div>
   </div>
