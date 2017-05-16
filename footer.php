@@ -13,6 +13,7 @@
         <a class="grey-text text-lighten-4 right" href="https://github.com/Jhonbeltran">@Jhonbeltran</a>
       </div>
     </div>
-  </footer>       
+  </footer>
+  <?php wp_footer(); ?>       
 </body>
 </html>
