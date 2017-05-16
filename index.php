@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("home"); ?>
   <div class="container">
     <div class="row">
       <?php get_sidebar(); ?>
