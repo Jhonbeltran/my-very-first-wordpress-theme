@@ -15,8 +15,14 @@
             ?>
                   <article>
                     <div class="flow-text grey-text" style="font-style: italic;">
-                      <?php the_excerpt(); ?>
+                      <?php the_excerpt(); ?> 
+                      <p>
+                        <a class="blue-grey-text btn white" href="<?php the_permalink(); ?>">
+                          Leer más
+                        </a>
+                      </p>
                     </div>
+
                   </article>
             <?php 
                 endwhile;
