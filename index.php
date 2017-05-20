@@ -5,15 +5,19 @@
       <div class="col s12 l9">
         <div class="row"></div>
         <div class="row">
-          <h3>Mis Proyectos más recientes</h3>
+          <h4 class="blue-grey-text">
+            Mis Proyectos más recientes
+          </h4>
           <div class="divider"></div>
 
           <?php if (have_posts()){
             while (have_posts()) {
               the_post(); ?>
               <article>
-                <h4><?php the_title(); ?></h4>
-                <p class="flow-text blue-grey-text"><?php the_excerpt(); ?></p>
+                <h5 style="text-transform: uppercase !important;">
+                  <?php the_title(); ?>
+                </h5>
+                <div class="flow-text blue-grey-text"><?php the_excerpt(); ?></div>
                 <footer>
                   <blockquote>
                     <?php the_tags(); ?> @<?php the_author(); ?>
