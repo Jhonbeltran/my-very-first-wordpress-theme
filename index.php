@@ -10,7 +10,7 @@
           </h4>
           <div class="divider"></div>
             <?php
-              $args = array('cat' => 4);
+              $args = array('cat' => 1);
               $category_posts = new WP_Query($args);
 
               if($category_posts->have_posts()):
@@ -32,13 +32,17 @@
                 endwhile;
               else:
             ?>
+                <div class="row"></div>
                 <p class="flow-text">
                   No encontramos entradas 😱
                 </p>
+                <div class="row"></div>
+                <div class="row"></div>
+                
+
             <?php 
               endif;
             ?>
-
         </div>
       </div>
     </div>
