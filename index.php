@@ -49,8 +49,8 @@
                   $category_posts->the_post();
             ?>
                   <article>
-                    <h5 style="text-transform: uppercase !important;">
-                      <?php the_title(); ?>
+                    <h5 style="text-transform: uppercase !important;"><a class="black-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                      
                     </h5>
                     <div class="flow-text grey-text darken-1-text"><?php the_excerpt(); ?></div>
                     <footer>
