@@ -8,9 +8,9 @@
 </head>
 <body>
 	<div class="navbar-fixed">
-	  <nav class="white z-depth-1">
+	  <nav class=" blue-grey darken-2">
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center black-text flow-text"><?php bloginfo(name) ?></a>
+	      <a href="#!" class="brand-logo center black-text flow-text white-text"><?php bloginfo(name) ?></a>
 	    </div>
 	  </nav>
 	</div>
