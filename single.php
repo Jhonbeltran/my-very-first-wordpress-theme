@@ -11,15 +11,18 @@
                   the_post();
             ?>
                   <article>
-                    <h5 style="text-transform: uppercase !important;"><a class="black-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                      
-                    </h5>
-                    <div class="flow-text grey-text darken-1-text"><?php the_excerpt(); ?></div>
-                    <footer>
-                      <blockquote>
-                        <?php the_tags(); ?> @<?php the_author(); ?>
-                      </blockquote>
-                    </footer>
+                    <div class="row center">
+                      <h3 style="text-transform: uppercase !important;"><a class="grey-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h3>
+                    <h6 class="teal-text">
+                      @<?php the_author(); ?>
+                    </h6>
+                    <div class="divider"></div>
+                    </div>
+                    <div class="flow-text"><?php the_content(); ?></div>
+                    <blockquote>
+                      <?php the_tags(); ?>
+                    </blockquote>
                   </article>
             <?php 
                 endwhile;
@@ -40,4 +43,4 @@
       </div>
     </div>
   </div>
-<?php get_footer(); ?>
+<?php get_footer("single"); ?>

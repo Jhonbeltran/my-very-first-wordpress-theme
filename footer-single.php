@@ -9,8 +9,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2017 Feel free to edit and share!
-        <a class="grey-text text-lighten-4 right" href="https://github.com/Jhonbeltran">@Jhonbeltran on Github</a>
+        © 2017 My Very First Wordpress Theme
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Jhonbeltran">@Jhonbeltran</a>
       </div>
     </div>
   </footer>
