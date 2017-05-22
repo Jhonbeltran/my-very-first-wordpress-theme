@@ -10,7 +10,7 @@
 	<div class="navbar-fixed">
 	  <nav class=" blue-grey darken-2">
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center black-text flow-text white-text"><?php bloginfo(name) ?></a>
+	      <a href="<?php bloginfo(wpurl); ?>" class="brand-logo center black-text flow-text white-text"><?php bloginfo(name) ?></a>
 	    </div>
 	  </nav>
 	</div>
