@@ -6,7 +6,7 @@
         <div class="row"></div>
           <div class="row">
             <div class="flow-text teal-text center">
-              <?php the_category(); ?>
+              Category: <?php single_cat_title(); ?>
             </div>
             <?php
               if(have_posts()):
