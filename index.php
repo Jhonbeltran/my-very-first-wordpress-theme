@@ -58,6 +58,11 @@
                     <h5 style="text-transform: uppercase !important;"><a class="black-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                       
                     </h5>
+                    <?php 
+                      if (has_post_thumbnail()){
+                        the_post_thumbnail();
+                      }  
+                    ?>
                     <div class="flow-text grey-text darken-1-text"><?php the_excerpt(); ?></div>
                     <footer>
                       <blockquote>
