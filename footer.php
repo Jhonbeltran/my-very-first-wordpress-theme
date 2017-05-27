@@ -5,6 +5,16 @@
           <h5 class="white-text"><?php bloginfo(name) ?></h5>
           <p class="grey-text text-lighten-4"><?php bloginfo(description) ?></p>
         </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Footer Menu</h5>
+          <?php 
+          wp_nav_menu(
+            array (
+              'theme_location' => 'bottom-menu',
+              )
+            )
+          ?>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
