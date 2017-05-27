@@ -1,4 +1,4 @@
-	  <div class="col s12 l3 hide-on-med-and-down">
+	  <div class="col s12 l3 hide-on-med-and-down flow-text">
         <?php 
 	      	wp_nav_menu(
 	      		array (
