@@ -54,22 +54,25 @@
                 while($category_posts->have_posts()):
                   $category_posts->the_post();
             ?>
-                  <article>
-                    <h5 style="text-transform: uppercase !important;"><a class="black-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                      
-                    </h5>
-                    <?php 
-                      if (has_post_thumbnail()){
-                        the_post_thumbnail();
-                      }  
-                    ?>
-                    <div class="flow-text grey-text darken-1-text"><?php the_excerpt(); ?></div>
-                    <footer>
-                      <blockquote>
-                        <?php the_tags(); ?> @<?php the_author(); ?>
-                      </blockquote>
-                    </footer>
-                  </article>
+                  
+                    <div class="col s12">
+                      <div class="card">
+                        <div class="card-image">
+                          <?php 
+                            if (has_post_thumbnail()){
+                              the_post_thumbnail('large');
+                            }  
+                          ?>
+                          <span class="card-title"><?php the_title(); ?></span>
+                        </div>
+                        <div class="card-content">
+                          <p><?php the_excerpt(); ?></p>
+                        </div>
+                        <div class="card-action">
+                          <a href="<?php the_permalink(); ?>">Leer más</a>
+                        </div>
+                      </div>
+                    </div>
             <?php 
                 endwhile;
               else:
