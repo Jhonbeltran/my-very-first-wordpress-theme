@@ -57,10 +57,12 @@
                   
                     <div class="col s12">
                       <div class="card">
+
                         <div class="card-image">
                           <?php 
-                            if (has_post_thumbnail()){
-                              the_post_thumbnail('large');
+                            if (has_post_thumbnail()){?>
+                            <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="">
+                          <?php    
                             }  
                           ?>
                           <span class="card-title"><?php the_title(); ?></span>
