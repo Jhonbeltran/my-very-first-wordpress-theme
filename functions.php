@@ -7,6 +7,7 @@ function register_my_menus(){
 		array(
 			'top-menu' => __('Top Menu'),
 			'bottom_menu' => __('Footer Menu'),
+			'sidebar_menu' => __('SideBar Menu'),
 		)
 	);
 }
