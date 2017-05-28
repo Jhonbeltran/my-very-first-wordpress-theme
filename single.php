@@ -41,6 +41,7 @@
               endif;
             ?>
         </div>
+        <?php include_once('authorsingle.php') ?>
       </div>
     </div>
   </div>
