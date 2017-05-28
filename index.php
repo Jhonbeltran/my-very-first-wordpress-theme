@@ -69,9 +69,11 @@
                         </div>
                         <div class="card-content">
                           <p><?php the_excerpt(); ?></p>
+                          <b><?php the_author_posts_link(); ?></b>
                         </div>
                         <div class="card-action">
                           <a href="<?php the_permalink(); ?>">Leer más</a>
+
                         </div>
                       </div>
                     </div>

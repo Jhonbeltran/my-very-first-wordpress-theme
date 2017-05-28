@@ -12,10 +12,11 @@
             ?>
                   <article>
                     <div class="row center">
-                      <h3 style="text-transform: uppercase !important;"><a class="grey-text" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                      <h3 style="text-transform: uppercase !important;">
+                        <?php the_title(); ?>
                     </h3>
                     <h6 class="teal-text">
-                      @<?php the_author(); ?>
+                      @<?php the_author_posts_link(); ?>
                     </h6>
                     <div class="divider"></div>
                     </div>
